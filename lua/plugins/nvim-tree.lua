@@ -3,10 +3,10 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 -- Configuration
-vim.g.nvim_tree_auto_open = 0
+vim.g.nvim_tree_auto_open = 1
 vim.g.nvim_tree_width = 25
 vim.g.nvim_tree_gitignore = 1
-vim.g.nvim_tree_auto_close = 1
+vim.g.nvim_tree_auto_close = 0
 vim.g.nvim_tree_indent_markers = 1
 
 -- set termguicolors to enable highlight groups
@@ -32,5 +32,5 @@ require("nvim-tree").setup({
 
 -- keymaps
 vim.keymap.set('n', '<c-n>', ':NvimTreeFindFileToggle<CR>')
-vim.keymap.set('n', '<leader>n', ':NvimTreeToggle<CR>')
+vim.keymap.set('n', '<space>e', ':NvimTreeToggle<CR>')
 
