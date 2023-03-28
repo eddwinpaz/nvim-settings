@@ -8,9 +8,7 @@ map('', '<down>', '<nop>', {noremap = true})
 map('', '<left>', '<nop>', {noremap = true})
 map('', '<right>', '<nop>', {noremap = true})
 
-map('i', '<C-h>', '<left>', default_opts)
-map('i', '<C-j>', '<down>', default_opts)
-map('i', '<C-k>', '<up>', default_opts)
-map('i', '<C-l>', '<right>', default_opts)
-
-vim.g.mapleader = ","
+-- map('i', '<C-h>', '<left>', default_opts)
+-- map('i', '<C-j>', '<down>', default_opts)
+-- map('i', '<C-k>', '<up>', default_opts)
+-- map('i', '<C-l>', '<right>', default_opts)

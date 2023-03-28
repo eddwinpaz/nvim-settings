@@ -12,12 +12,9 @@ vim.g.nvim_tree_indent_markers = 1
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 
-vim.cmd([[
-    nnoremap - :NvimTreeToggle<CR>
-]])
-
 -- empty setup using defaults
 require("nvim-tree").setup()
+
 
 -- OR setup with some options
 require("nvim-tree").setup({
@@ -29,6 +26,10 @@ require("nvim-tree").setup({
     dotfiles = true,
   },
 })
+
+vim.cmd([[
+  autocmd VimEnter * NvimTreeToggle
+]])
 
 -- keymaps
 vim.keymap.set('n', '<c-n>', ':NvimTreeFindFileToggle<CR>')
