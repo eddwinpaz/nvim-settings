@@ -5,6 +5,6 @@ opt.termguicolors = true
 
 cmd [[colorscheme ayu]]
 require('ayu').setup({
-    mirage = true,
+    mirage = false,
     overrides = {},
 })

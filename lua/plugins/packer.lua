@@ -41,7 +41,7 @@ return require('packer').startup(function(use)
     -- Golang
     use 'ray-x/go.nvim'
     use 'ray-x/guihua.lua' -- recommended if need floating window support
-
+    use "fatih/vim-go" 
     -- LSP
    use {
 	  'VonHeikemen/lsp-zero.nvim',
