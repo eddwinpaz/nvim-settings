@@ -12,3 +12,8 @@ map('', '<right>', '<nop>', {noremap = true})
 -- map('i', '<C-j>', '<down>', default_opts)
 -- map('i', '<C-k>', '<up>', default_opts)
 -- map('i', '<C-l>', '<right>', default_opts)
+
+-- map('n', 'K', ':m .-2<CR>==', {noremap = true, silent = true})
+-- map('n', 'J', ':m .+1<CR>==', {noremap = true, silent = true})
+-- map('v', 'K', "'<-2<CR>gv=gv", {noremap = true, silent = true})
+-- map('v', 'J', "'>+1<CR>gv=gv", {noremap = true, silent = true})

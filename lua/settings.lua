@@ -7,6 +7,7 @@ local opt = vim.opt
 
 -- General
 g.mapleader = ","
+opt.listchars:append({ tab = "› ", nbsp = "·", trail = "·", extends = ">", precedes = "<", eol = "↲" })
 
 -- UI
 opt.number = true
@@ -25,3 +26,7 @@ opt.mouse="a"
 opt.clipboard="unnamed"
 opt.scrollbind=false
 opt.wildmenu=true
+opt.modifiable=true
+opt.list = true
+opt.cursorline = true               -- highlight current line
+

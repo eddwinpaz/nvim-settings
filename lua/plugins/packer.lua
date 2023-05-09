@@ -12,8 +12,12 @@ return require('packer').startup(function(use)
     -- Package manager
     use 'wbthomason/packer.nvim'
 
+    -- Move text
+    use 'fedepujol/move.nvim'
+
     -- Theme color
-    use 'Shatur/neovim-ayu'
+    -- use 'Shatur/neovim-ayu'
+    use  "ellisonleao/gruvbox.nvim" 
 
     -- Git manager
     use 'lewis6991/gitsigns.nvim'
@@ -28,13 +32,32 @@ return require('packer').startup(function(use)
             'nvim-tree/nvim-web-devicons' -- optional
         }
     }
+
+    use {
+  	'nvim-lualine/lualine.nvim',
+  	requires = { 
+		'nvim-tree/nvim-web-devicons', opt = true 
+	}
+    }
+
+    -- # binary will be $(go env GOPATH)/bin/golangci-lint
+    -- curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.52.2
+
     use {
         "nvim-treesitter/nvim-treesitter", -- https://github.com/nvim-treesitter/nvim-treesitter
         run = ":TSUpdate"
     }
     use "nvim-treesitter/nvim-treesitter-textobjects" -- https://github.com/nvim-treesitter/nvim-treesitter-textobjects
+    
+    use "windwp/nvim-ts-autotag" -- tag close in code
+    
+    use {
+	"windwp/nvim-autopairs",
+    	config = function() require("nvim-autopairs").setup {} end
+    }
 
     -- Telescope
+    -- sudo apt install ripgrep
     use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
     use {        'nvim-telescope/telescope.nvim', requires = {'nvim-lua/plenary.nvim'}, branch = '0.1.x' }
 

@@ -1,10 +1,11 @@
 local cmd = vim.cmd
 local opt = vim.opt
 
-opt.termguicolors = true
+opt.termguicolors = false
 
 cmd [[colorscheme ayu]]
 require('ayu').setup({
-    mirage = false,
-    overrides = {},
+    mirage = true,
+    overrides = {
+    },
 })
