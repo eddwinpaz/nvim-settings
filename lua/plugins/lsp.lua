@@ -9,6 +9,7 @@ lsp.ensure_installed({
   'jsonls',
   'jdtls',
   'quick_lint_js',
+  '',
   'vtsls',
   'dockerls',
   'docker_compose_language_service',
