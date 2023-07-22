@@ -6,6 +6,8 @@ require("plugins/gruvbox-theme")
 require("plugins/packer") -- plugin manager
 -- require("plugins/ayu-theme") -- color theme
 require("plugins/telescope") -- fzf finder
+require("plugins/prettier") -- Prettier
+require("plugins/null-ls") -- null ls
 require("plugins/move") -- move text across buffer
 require("plugins/vim-go") -- go development
 require("plugins/nvim-tree") -- nvim file tree

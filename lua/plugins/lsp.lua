@@ -1,5 +1,6 @@
 local lsp = require("lsp-zero")
 
+
 lsp.preset("recommended")
 
 lsp.ensure_installed({
@@ -9,7 +10,6 @@ lsp.ensure_installed({
   'jsonls',
   'jdtls',
   'quick_lint_js',
-  '',
   'vtsls',
   'dockerls',
   'docker_compose_language_service',
@@ -69,6 +69,8 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
+
+lsp.skip_server_setup({'lsp-jdtls'}) -- Java setup
 
 lsp.setup()
 

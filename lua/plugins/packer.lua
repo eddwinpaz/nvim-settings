@@ -89,4 +89,10 @@ return require('packer').startup(function(use)
 	  }
   } 
 
+    -- Prettier
+    use('MunifTanjim/prettier.nvim')
+
+    -- null ls
+    use('jose-elias-alvarez/null-ls.nvim')
+
 end)
