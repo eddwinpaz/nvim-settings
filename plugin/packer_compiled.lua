@@ -124,11 +124,6 @@ _G.packer_plugins = {
     path = "/home/eddwinpaz/.local/share/nvim/site/pack/packer/start/go.nvim",
     url = "https://github.com/ray-x/go.nvim"
   },
-  ["gruvbox.nvim"] = {
-    loaded = true,
-    path = "/home/eddwinpaz/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
-    url = "https://github.com/ellisonleao/gruvbox.nvim"
-  },
   ["guihua.lua"] = {
     loaded = true,
     path = "/home/eddwinpaz/.local/share/nvim/site/pack/packer/start/guihua.lua",
@@ -158,6 +153,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/eddwinpaz/.local/share/nvim/site/pack/packer/start/move.nvim",
     url = "https://github.com/fedepujol/move.nvim"
+  },
+  ["neovim-ayu"] = {
+    loaded = true,
+    path = "/home/eddwinpaz/.local/share/nvim/site/pack/packer/start/neovim-ayu",
+    url = "https://github.com/Shatur/neovim-ayu"
   },
   ["null-ls.nvim"] = {
     loaded = true,

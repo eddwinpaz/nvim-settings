@@ -16,8 +16,8 @@ return require('packer').startup(function(use)
     use 'fedepujol/move.nvim'
 
     -- Theme color
-    -- use 'Shatur/neovim-ayu'
-    use  "ellisonleao/gruvbox.nvim" 
+    use 'Shatur/neovim-ayu'
+    -- use  "ellisonleao/gruvbox.nvim" 
 
     -- Git manager
     use 'lewis6991/gitsigns.nvim'

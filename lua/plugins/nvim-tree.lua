@@ -32,6 +32,6 @@ vim.cmd([[
 ]])
 
 -- keymaps
-vim.keymap.set('n', '<c-n>', ':NvimTreeFindFileToggle<CR>')
+vim.keymap.set('n', '<space>n', ':NvimTreeFindFileToggle<CR>')
 vim.keymap.set('n', '<space>e', ':NvimTreeToggle<CR>')
 
